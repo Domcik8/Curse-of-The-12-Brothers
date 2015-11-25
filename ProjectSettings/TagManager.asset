@@ -26,14 +26,14 @@ TagManager:
   - 
   - 
   - Other
-  - Horizont4
+  - 
   - Characters
   - Objects
-  - Horizont3
-  - Horizont2
-  - Horizont1
-  - Mountain
-  - Sky
+  - 
+  - 
+  - 
+  - 
+  - 
   - FML
   - Ground
   - Enemy
@@ -48,7 +48,7 @@ TagManager:
   - 
   - 
   - 
-  - Background
+  - 
   m_SortingLayers:
   - name: Default
     uniqueID: 0

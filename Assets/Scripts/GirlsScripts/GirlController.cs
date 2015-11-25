@@ -62,7 +62,7 @@ public class GirlController : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        //Debug.Log("Game information: " + gameObject.name + " on enter triggered " + other.gameObject.name);
+        Debug.Log("Game information: " + gameObject.name + " on enter triggered " + other.gameObject.name);
         switch (other.gameObject.tag)
         {
             case "Feather":
@@ -86,7 +86,7 @@ public class GirlController : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        //Debug.Log("Game information: " + gameObject.name + " collided with " + other.gameObject.name);
+        Debug.Log("Game information: " + gameObject.name + " collided with " + other.gameObject.name);
         switch (other.gameObject.tag)
         {
             case "Ground":
