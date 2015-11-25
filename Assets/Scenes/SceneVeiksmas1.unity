@@ -4070,7 +4070,7 @@ Prefab:
       objectReference: {fileID: 9100000, guid: 0e4cbb13821cb5848bd3a510bd71cf61, type: 2}
     - target: {fileID: 11426812, guid: f054042857d02f641b3ef98e0f64fc3b, type: 2}
       propertyPath: deathDelay
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f054042857d02f641b3ef98e0f64fc3b, type: 2}
