@@ -6052,35 +6052,35 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 481122, guid: b223e8f7f2cf06a40ae23e2114ad791d, type: 2}
+    - target: {fileID: 494700, guid: b223e8f7f2cf06a40ae23e2114ad791d, type: 2}
       propertyPath: m_LocalPosition.x
       value: 6.5999999
       objectReference: {fileID: 0}
-    - target: {fileID: 481122, guid: b223e8f7f2cf06a40ae23e2114ad791d, type: 2}
+    - target: {fileID: 494700, guid: b223e8f7f2cf06a40ae23e2114ad791d, type: 2}
       propertyPath: m_LocalPosition.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 481122, guid: b223e8f7f2cf06a40ae23e2114ad791d, type: 2}
+    - target: {fileID: 494700, guid: b223e8f7f2cf06a40ae23e2114ad791d, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 481122, guid: b223e8f7f2cf06a40ae23e2114ad791d, type: 2}
+    - target: {fileID: 494700, guid: b223e8f7f2cf06a40ae23e2114ad791d, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 481122, guid: b223e8f7f2cf06a40ae23e2114ad791d, type: 2}
+    - target: {fileID: 494700, guid: b223e8f7f2cf06a40ae23e2114ad791d, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 481122, guid: b223e8f7f2cf06a40ae23e2114ad791d, type: 2}
+    - target: {fileID: 494700, guid: b223e8f7f2cf06a40ae23e2114ad791d, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 481122, guid: b223e8f7f2cf06a40ae23e2114ad791d, type: 2}
+    - target: {fileID: 494700, guid: b223e8f7f2cf06a40ae23e2114ad791d, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 481122, guid: b223e8f7f2cf06a40ae23e2114ad791d, type: 2}
+    - target: {fileID: 494700, guid: b223e8f7f2cf06a40ae23e2114ad791d, type: 2}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}

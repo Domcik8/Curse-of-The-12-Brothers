@@ -27,13 +27,13 @@ public class GirlController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKey(KeyCode.A))
         {
-            GetComponent<Rigidbody2D>().AddForce(new Vector2(-speed, 0));
+            transform.Translate(Vector3.left * Time.deltaTime * speed);
         }
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKey(KeyCode.D))
         {
-            GetComponent<Rigidbody2D>().AddForce(new Vector2(speed, 0));
+            transform.Translate(Vector3.right * Time.deltaTime * speed);
         }
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
         {
