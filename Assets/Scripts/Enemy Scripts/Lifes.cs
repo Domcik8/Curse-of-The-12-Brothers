@@ -33,6 +33,7 @@ public class Lifes : MonoBehaviour
             if (this.gameObject.tag == "Player")
             {
                 gameObject.GetComponent<Animator>().SetBool("Dead", true);
+                gameObject.GetComponent<GirlController>().isDead = true;
                 GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().GirlsDeath();
             }
 

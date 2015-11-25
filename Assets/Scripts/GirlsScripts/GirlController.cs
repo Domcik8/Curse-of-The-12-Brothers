@@ -12,6 +12,7 @@ public class GirlController : MonoBehaviour {
     public bool isOnGround = false;
     public int dealDemage = 1;
     public bool bossFight = false;
+    public bool isDead = false;
 
     private float nextFire;
     public float fireRate = 0.5f;
@@ -33,24 +34,24 @@ public class GirlController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) && !isDead)
         {
             transform.Translate(Vector3.left * Time.deltaTime * speed);
             anim.SetBool("Run", true);
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) && !isDead)
         {
             transform.Translate(Vector3.right * Time.deltaTime * speed);
             anim.SetBool("Run", true);
         }
-        if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
+        if (Input.GetKeyDown(KeyCode.Space) && isOnGround && !isDead)
         {
             isOnGround = false;
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
             anim.SetBool("Jump", true);
         }
 
-        if (Input.GetKeyDown (KeyCode.Z) && (featherCount > 0) && (Time.time > nextFire))
+        if (Input.GetKeyDown (KeyCode.Z) && (featherCount > 0) && (Time.time > nextFire) && !isDead)
         {
             nextFire = Time.time + fireRate;
 			Instantiate(shot, shotSpawn.transform.position, shotSpawn.transform.rotation);

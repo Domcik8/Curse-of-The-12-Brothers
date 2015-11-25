@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour {
     public void GirlsDeath()
     {
         StopLevel();
-        GameObject.FindGameObjectWithTag("Shadow").GetComponent<Shadow>().ShadowDeath();
+       GameObject.FindGameObjectWithTag("Shadow").GetComponent<Shadow>().ShadowDeath();
 
     }
 }
