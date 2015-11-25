@@ -10,11 +10,12 @@ public class Lifes : MonoBehaviour
     Animator animator;
     private Rigidbody2D rb;
     private Collider2D coll;
+
     void Start()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        coll = GetComponent<PolygonCollider2D>();
+        coll = GetComponent<Collider2D>();
     }
 
     // Update is called once per frame
@@ -22,9 +23,12 @@ public class Lifes : MonoBehaviour
     {
         if (life <= 0)
         {
-            anim.SetBool("Dead", true);
-            rb.isKinematic = true;
-            coll.enabled = false;
+            if (this.gameObject.tag == "Enemy")
+            {
+                anim.SetBool("Dead", true);
+                GetComponent<PhysicsMover>().enabled = false;
+                DeactivateChildren(this.gameObject ,false);
+            }
             Destroy(gameObject, deathDelay);
         }
     }
@@ -32,5 +36,18 @@ public class Lifes : MonoBehaviour
     public void addlife(int live)
     {
         life += live;
+    }
+
+
+    void DeactivateChildren(GameObject g, bool a)
+    {
+
+        Transform child = transform.FindChild("Trigger");
+
+        if (child != null)
+        {
+            child.gameObject.SetActive(false);
+        }
+        else Debug.Log("Child not found");
     }
 }
