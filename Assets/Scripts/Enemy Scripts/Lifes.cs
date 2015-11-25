@@ -25,21 +25,14 @@ public class Lifes : MonoBehaviour
         {
             if (this.gameObject.tag == "Enemy")
             {
+                rb.constraints = RigidbodyConstraints2D.FreezePositionY;
+                coll.enabled = false;
                 anim.SetBool("Dead", true);
                 GetComponent<PhysicsMover>().enabled = false;
                 DeactivateChildren(this.gameObject ,false);
             }
 
-
-            if (this.gameObject.tag == "Boss")
-            {
-                anim.SetBool("Dead", true);
-                if(gameObject.GetComponent<BossController>() != null)
-                     gameObject.GetComponent<BossController>().notDead = false;
-
-            }
-
-                if (this.gameObject.tag == "Player")
+            if (this.gameObject.tag == "Player")
             {
                 gameObject.GetComponent<Animator>().SetBool("Dead", true);
                 gameObject.GetComponent<GirlController>().isDead = true;
@@ -67,6 +60,5 @@ public class Lifes : MonoBehaviour
         {
             child.gameObject.SetActive(false);
         }
-        else Debug.Log("Child not found");
     }
 }
