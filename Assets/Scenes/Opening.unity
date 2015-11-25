@@ -270,7 +270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: ddfc0b29e10fd2e42bed55cd4d1401a1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f34e16468f150e448798fe947ff53f7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -397,7 +397,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: acd104da49d02f54b9dd15855b4e74c4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b8c0690df58cbbe4aaf2a4c765449cbc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -458,7 +458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: 00d1ca2ba25661243a95ac4533025494, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2108cb729570fbd419abacde841f8b85, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -681,7 +681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: 17224ef1f56eb624cb1f655d52773c71, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1cea4a855cd42a446bef7a9ee5ee7d18, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -757,6 +757,32 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 913169642}
+--- !u!1 &1272107955 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 133362, guid: 4a1c32763beb3f44eb288d66c5a5ffba, type: 2}
+  m_PrefabInternal: {fileID: 1816449048}
+--- !u!114 &1272107956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1272107955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bde0d768cb384234da9823eace9a9717, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  i1: {fileID: 28523696}
+  i2: {fileID: 903700309}
+  i3: {fileID: 849563087}
+  i4: {fileID: 785595524}
+  i5: {fileID: 913169644}
+  i6: {fileID: 110318939}
+  i7: {fileID: 1511963182}
+  i8: {fileID: 755214769}
+  i9: {fileID: 1839608478}
+  i10: {fileID: 1858970592}
+  i11: {fileID: 2105095130}
 --- !u!1 &1511963180
 GameObject:
   m_ObjectHideFlags: 0
@@ -1126,32 +1152,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4a1c32763beb3f44eb288d66c5a5ffba, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1816449049 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 197364, guid: 4a1c32763beb3f44eb288d66c5a5ffba, type: 2}
-  m_PrefabInternal: {fileID: 1816449048}
---- !u!114 &1816449050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1816449049}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a53d4e0c28cc82e4bad132b427e10605, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  i1: {fileID: 28523696}
-  i2: {fileID: 903700309}
-  i3: {fileID: 849563087}
-  i4: {fileID: 785595524}
-  i5: {fileID: 913169644}
-  i6: {fileID: 110318939}
-  i7: {fileID: 1511963182}
-  i8: {fileID: 755214769}
-  i9: {fileID: 1839608478}
-  i10: {fileID: 1858970592}
-  i11: {fileID: 2105095130}
 --- !u!1 &1839608477
 GameObject:
   m_ObjectHideFlags: 0
@@ -1261,7 +1261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: 9805180260dba13429184c24104ebb9d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 275f56c30fa9bea4c9097c658c9c665d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

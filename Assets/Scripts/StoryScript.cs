@@ -48,27 +48,27 @@ public class StoryScript : MonoBehaviour
 	{
 		b = true;
 
-		yield return new WaitForSeconds(3f);
+		yield return new WaitForSeconds(5f);
 		i2.GetComponent<Image>().enabled = true;
 		yield return new WaitForSeconds(3f);
 		i3.GetComponent<Image>().enabled = true;
 		i3.GetComponentInChildren<Text> ().enabled = true;
-		yield return new WaitForSeconds(3f);
+		yield return new WaitForSeconds(5f);
 		i4.GetComponent<Image>().enabled = true;
 		yield return new WaitForSeconds(3f);
 		i5.GetComponent<Image>().enabled = true;
 		i5.GetComponentInChildren<Text> ().enabled = true;
-		yield return new WaitForSeconds(3f);
+		yield return new WaitForSeconds(5f);
 		i6.GetComponent<Image>().enabled = true;
 		yield return new WaitForSeconds(3f);
 		i7.GetComponent<Image>().enabled = true;
 		i7.GetComponentInChildren<Text> ().enabled = true;
-		yield return new WaitForSeconds(3f);
+		yield return new WaitForSeconds(5f);
 		i8.GetComponent<Image>().enabled = true;
 		yield return new WaitForSeconds(3f);
 		i9.GetComponent<Image>().enabled = true;
 		i9.GetComponentInChildren<Text> ().enabled = true;
-		yield return new WaitForSeconds(3f);
+		yield return new WaitForSeconds(5f);
 		i10.GetComponent<Image>().enabled = true;
 		yield return new WaitForSeconds(3f);
 		i11.GetComponent<Image>().enabled = true;

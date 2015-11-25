@@ -389,15 +389,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Jump----------w
+  m_Text: 'Jump------space
 
-    Crouch---------s
+    Crouch-----none
 
-    Faster---------d
+    Faster----------d
 
     Slower---------a
 
-    Attack------h j k l
+    Attack----------z
 
     Press esc to return to meniu'
 --- !u!222 &428814732
