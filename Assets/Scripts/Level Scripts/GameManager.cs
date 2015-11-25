@@ -46,8 +46,16 @@ public class GameManager : MonoBehaviour {
 
         foreach (GameObject enemy in enemies)
         {
-            if (enemy.GetComponent<SimpleMover>() != null)
-                enemy.GetComponent<SimpleMover>().StopMovement();
+            if (enemy.GetComponent<PhysicsMover>() != null)
+                enemy.GetComponent<PhysicsMover>().StopMovement();
+        }
+
+        GameObject[] bosses = GameObject.FindGameObjectsWithTag("Boss");
+
+        foreach (GameObject boss in bosses)
+        {
+            if (boss.GetComponent<PhysicsMover>() != null)
+                boss.GetComponent<PhysicsMover>().StopMovement();
         }
     }
 

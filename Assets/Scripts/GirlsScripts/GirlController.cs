@@ -58,9 +58,6 @@ public class GirlController : MonoBehaviour {
 		    GetComponent<AudioSource>().Play();
 			featherCount--;
 		}
-
-      //  if ((Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D)) && bossFight)
-          //  anim.SetBool("Run", false);
     }
 
     void OnTriggerEnter2D(Collider2D other)

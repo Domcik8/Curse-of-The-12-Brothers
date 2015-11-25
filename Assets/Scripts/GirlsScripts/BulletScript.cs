@@ -18,7 +18,7 @@ public class BulletScript : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D coll)
     {
         //Debug.Log(coll.gameObject.name + " has beed attacked.");
-        if (coll.gameObject.tag == "Enemy")
+        if (coll.gameObject.tag == "Enemy" || coll.gameObject.tag == "Boss")
         {
             coll.gameObject.GetComponent<Lifes>().addlife(-damage);
             Destroy(gameObject);

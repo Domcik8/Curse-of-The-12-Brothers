@@ -30,7 +30,16 @@ public class Lifes : MonoBehaviour
                 DeactivateChildren(this.gameObject ,false);
             }
 
-            if (this.gameObject.tag == "Player")
+
+            if (this.gameObject.tag == "Boss")
+            {
+                anim.SetBool("Dead", true);
+                if(gameObject.GetComponent<BossController>() != null)
+                     gameObject.GetComponent<BossController>().notDead = false;
+
+            }
+
+                if (this.gameObject.tag == "Player")
             {
                 gameObject.GetComponent<Animator>().SetBool("Dead", true);
                 gameObject.GetComponent<GirlController>().isDead = true;

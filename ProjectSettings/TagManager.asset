@@ -15,6 +15,7 @@ TagManager:
   - Text
   - GM
   - Shadow
+  - Boss
   layers:
   - Default
   - TransparentFX

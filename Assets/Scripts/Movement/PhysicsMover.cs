@@ -31,4 +31,10 @@ public class PhysicsMover : MonoBehaviour
             transform.Translate(Vector3.left * Time.deltaTime * speed);
         }
     }
+
+    public void StopMovement()
+    {
+
+        speed = 0;
+    }
 }
