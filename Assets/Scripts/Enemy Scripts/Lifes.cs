@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Lifes : MonoBehaviour
 {
-    public int life;
+    public float life;
     public float deathDelay;
 
     private Animator anim;
@@ -42,7 +42,7 @@ public class Lifes : MonoBehaviour
 
     }
 
-    public void addlife(int live)
+    public void addlife(float live)
     {
         life += live;
     }
