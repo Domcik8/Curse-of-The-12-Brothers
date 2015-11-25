@@ -8,28 +8,46 @@ public class BossController : MonoBehaviour {
 	private float nextFire;
 	public float fireRate = 0.5f;
 	private int count = 0;
-	public Animator animator;
+	public Animator anim;
     public bool notDead = true;
+    private GameObject player;
+    public float distanceToStart;
 
-
-	void Start () {
-		animator = GetComponent<Animator>();
-	}
+    void Start () {
+		anim = GetComponent<Animator>();
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
 	
 	// Update is called once per frame
 	void Update ()
 	{
-        if(GameObject.FindWithTag("Player") != null)
-	        fireRate = this.gameObject.transform.position.x -
-	                   GameObject.FindWithTag("Player").GetComponent<Transform>().position.x;
+        
 
-	    if (fireRate > 0.7f) fireRate = 0.7f;
-     
-		if ((Time.time > nextFire) && notDead)
+	    
+
+        if (Mathf.Abs(this.gameObject.transform.position.x - player.transform.position.x) < distanceToStart)
         {
-			nextFire = Time.time + fireRate;
-			Instantiate (wave, spawn.position, spawn.rotation);
+            shoot();
+        }
 
-		}
-	}
+    }
+
+    public void shoot()
+    {
+
+
+        anim.Play("witchAttack", 0);
+
+        if (GameObject.FindWithTag("Player") != null)
+            fireRate = this.gameObject.transform.position.x - player.GetComponent<Transform>().position.x;
+
+        if (fireRate > 0.7f) fireRate = 0.7f;
+
+        if ((Time.time > nextFire) && notDead)
+        {
+            nextFire = Time.time + fireRate;
+            Instantiate(wave, spawn.position, spawn.rotation);
+
+        }
+    }
 }

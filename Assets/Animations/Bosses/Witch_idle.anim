@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: laumeAttack
+  m_Name: Witch_idle
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,9 +20,7 @@ AnimationClip:
     - time: 0
       value: {fileID: 21300000, guid: 4c0d247b96d6efe4da4633e412586819, type: 3}
     - time: .0833333358
-      value: {fileID: 21300000, guid: 3629a53c032f47b4fb1f8319e3ac1743, type: 3}
-    - time: .166666672
-      value: {fileID: 21300000, guid: 95e2590d626c0084588c43684ae152ab, type: 3}
+      value: {fileID: 21300000, guid: 6737947c374e6fc458020d82d50b7a60, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -42,12 +40,11 @@ AnimationClip:
       isPPtrCurve: 1
     pptrCurveMapping:
     - {fileID: 21300000, guid: 4c0d247b96d6efe4da4633e412586819, type: 3}
-    - {fileID: 21300000, guid: 3629a53c032f47b4fb1f8319e3ac1743, type: 3}
-    - {fileID: 21300000, guid: 95e2590d626c0084588c43684ae152ab, type: 3}
+    - {fileID: 21300000, guid: 6737947c374e6fc458020d82d50b7a60, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_StartTime: 0
-    m_StopTime: .25
+    m_StopTime: .166666672
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
