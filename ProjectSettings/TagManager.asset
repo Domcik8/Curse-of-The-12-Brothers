@@ -13,6 +13,7 @@ TagManager:
   - Feather
   - End
   - Text
+  - GM
   layers:
   - Default
   - TransparentFX

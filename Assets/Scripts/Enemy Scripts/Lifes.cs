@@ -29,8 +29,17 @@ public class Lifes : MonoBehaviour
                 GetComponent<PhysicsMover>().enabled = false;
                 DeactivateChildren(this.gameObject ,false);
             }
+
+            if (this.gameObject.tag == "Player")
+            {
+                gameObject.GetComponent<Animator>().SetBool("Dead", true);
+                GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().GirlsDeath();
+            }
+
             Destroy(gameObject, deathDelay);
         }
+
+
     }
 
     public void addlife(int live)

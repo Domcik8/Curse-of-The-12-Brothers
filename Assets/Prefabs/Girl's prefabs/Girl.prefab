@@ -275,7 +275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 5
-  deathDelay: 0
+  deathDelay: 15
 --- !u!114 &11478058
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -349,6 +349,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: jumpForce
       value: 30000
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deathDelay
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

@@ -50,4 +50,11 @@ public class GameManager : MonoBehaviour {
                 enemy.GetComponent<SimpleMover>().StopMovement();
         }
     }
+
+    public void GirlsDeath()
+    {
+        StopLevel();
+        GameObject.FindGameObjectWithTag("Shadow").GetComponent<Shadow>().ShadowDeath();
+
+    }
 }
