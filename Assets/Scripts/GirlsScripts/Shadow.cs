@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Diagnostics;
+using Debug = UnityEngine.Debug;
 
 public class Shadow : MonoBehaviour {
 
-    GameObject player;
+    public GameObject player;
     GameObject ground;
 
     public float shadowW = 10;
@@ -12,8 +14,7 @@ public class Shadow : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        player = GameObject.FindGameObjectWithTag("Player");
-        ground = GameObject.FindGameObjectWithTag("Ground");
+         ground = GameObject.FindGameObjectWithTag("Ground");
       
 	}
 
@@ -23,9 +24,10 @@ public class Shadow : MonoBehaviour {
         float distance = 0;
         
 
-        if (player != null)
+       // if (player != null)
         {
             distance = player.transform.position.y - gameObject.transform.position.y;
+            Debug.Log("Girl position " + player.transform.position + " " + player);
             gameObject.transform.position = new Vector2(player.transform.position.x , ground.transform.position.y + 0.5f);
             gameObject.transform.localScale = new Vector2(shadowW / distance, shadowH / distance);
         }

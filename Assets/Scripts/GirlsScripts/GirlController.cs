@@ -11,6 +11,7 @@ public class GirlController : MonoBehaviour {
     public int jumpForce = 35000;
     public bool isOnGround = false;
     public int dealDemage = 1;
+    public bool bossFight = false;
 
     private float nextFire;
     public float fireRate = 0.5f;
@@ -19,9 +20,14 @@ public class GirlController : MonoBehaviour {
     public GameObject shot;
     public GameObject shotSpawn;
     public GameObject shadow;
+
+    
+    Animator anim;
+
 	// Use this for initialization
 	void Start () {
-        Instantiate(shadow, gameObject.transform.position, gameObject.transform.rotation); 
+        anim = gameObject.GetComponent<Animator>();
+        anim.SetBool("Jump", true);
 	}
 	
 	// Update is called once per frame
@@ -30,15 +36,18 @@ public class GirlController : MonoBehaviour {
         if (Input.GetKey(KeyCode.A))
         {
             transform.Translate(Vector3.left * Time.deltaTime * speed);
+            anim.SetBool("Run", true);
         }
         if (Input.GetKey(KeyCode.D))
         {
             transform.Translate(Vector3.right * Time.deltaTime * speed);
+            anim.SetBool("Run", true);
         }
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
         {
             isOnGround = false;
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
+            anim.SetBool("Jump", true);
         }
 
         if (Input.GetKeyDown (KeyCode.Z) && (featherCount > 0) && (Time.time > nextFire))
@@ -48,6 +57,9 @@ public class GirlController : MonoBehaviour {
 		    GetComponent<AudioSource>().Play();
 			featherCount--;
 		}
+
+      //  if ((Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D)) && bossFight)
+          //  anim.SetBool("Run", false);
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -81,6 +93,7 @@ public class GirlController : MonoBehaviour {
         {
             case "Ground":
                 isOnGround = true;
+                anim.SetBool("Jump", false);
                 break;
         }
     }

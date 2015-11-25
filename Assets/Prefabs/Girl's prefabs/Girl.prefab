@@ -255,7 +255,7 @@ Animator:
   m_GameObject: {fileID: 103734}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 05b6f28db9b76364aa0d76619168e1c2, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0e4cbb13821cb5848bd3a510bd71cf61, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -291,6 +291,7 @@ MonoBehaviour:
   jumpForce: 30000
   isOnGround: 0
   dealDemage: 1
+  bossFight: 0
   fireRate: .5
   featherCount: 20
   shot: {fileID: 142834, guid: d5533699b18ac484cbf4761ccf4ae900, type: 2}
