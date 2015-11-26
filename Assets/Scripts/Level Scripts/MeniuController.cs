@@ -13,9 +13,13 @@ public class MeniuController : MonoBehaviour {
 	public Text t1;
 	public Text t2;
 	public Image logo;
+	public Image name1;
+	public Text name2;
 
 	void Start()
 	{
+		StartCoroutine (Waiting ());
+
 		c = c.GetComponent<Canvas> ();
 		play = play.GetComponent<Button> ();
 		controls = controls.GetComponent<Button> ();
@@ -84,5 +88,14 @@ public class MeniuController : MonoBehaviour {
 			exit.enabled = true;
 			logo.enabled = false;
 		}
+	}
+
+	IEnumerator Waiting()
+	{
+		yield return new WaitForSeconds(5f);
+		name1.GetComponent<Image>().enabled = false;
+		name2.GetComponent<Text> ().enabled = false;
+		
+		yield break;
 	}
 }
