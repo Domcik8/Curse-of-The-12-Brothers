@@ -293,7 +293,7 @@ MonoBehaviour:
   dealDemage: 1
   bossFight: 0
   isDead: 0
-  fireRate: .75
+  fireRate: .5
   featherCount: 20
   shot: {fileID: 116234, guid: d5533699b18ac484cbf4761ccf4ae900, type: 2}
   shotSpawn: {fileID: 120374}
@@ -338,6 +338,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: jumpForce
       value: 30000
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fireRate
+      value: .5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

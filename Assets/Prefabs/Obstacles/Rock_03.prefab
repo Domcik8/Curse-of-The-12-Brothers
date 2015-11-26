@@ -91,16 +91,14 @@ EdgeCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   m_Points:
-  - {x: -.112105772, y: -1.0361383}
-  - {x: -1.05653346, y: -.981758714}
-  - {x: -1.37547171, y: -.117806666}
-  - {x: -.703836799, y: .771145582}
-  - {x: -.0497115403, y: .973564684}
-  - {x: .685176313, y: .732813776}
-  - {x: 1.14098442, y: .305578619}
-  - {x: 1.19622719, y: -.451589048}
-  - {x: .85977459, y: -.994088292}
-  - {x: -.212009847, y: -1.01438415}
+  - {x: -1.22708082, y: -1.02329898}
+  - {x: -1.35271978, y: -.0769070983}
+  - {x: -.76660347, y: .773778558}
+  - {x: .134070396, y: .942307115}
+  - {x: .97233963, y: .547961354}
+  - {x: 1.15079021, y: -.259363294}
+  - {x: 1.09862328, y: -1.06283569}
+  - {x: -1.26384544, y: -1.00983489}
 --- !u!68 &6895580
 EdgeCollider2D:
   m_ObjectHideFlags: 1
@@ -113,16 +111,14 @@ EdgeCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   m_Points:
-  - {x: -.112105772, y: -1.0361383}
-  - {x: -1.05653346, y: -.981758714}
-  - {x: -1.37547171, y: -.117806666}
-  - {x: -.703836799, y: .771145582}
-  - {x: -.0497115403, y: .973564684}
-  - {x: .685176313, y: .732813776}
-  - {x: 1.14098442, y: .305578619}
-  - {x: 1.19622719, y: -.451589048}
-  - {x: .85977459, y: -.994088292}
-  - {x: -.212009847, y: -1.01438415}
+  - {x: -1.22708082, y: -1.02329898}
+  - {x: -1.35271978, y: -.0769070983}
+  - {x: -.76660347, y: .773778558}
+  - {x: .134070396, y: .942307115}
+  - {x: .97233963, y: .547961354}
+  - {x: 1.15079021, y: -.259363294}
+  - {x: 1.09862328, y: -1.06283569}
+  - {x: -1.26384544, y: -1.00983489}
 --- !u!82 &8250094
 AudioSource:
   m_ObjectHideFlags: 1
@@ -260,7 +256,95 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Points.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Points.Array.data[0].x
+      value: -1.22708082
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Points.Array.data[0].y
+      value: -1.02329898
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Points.Array.data[1].x
+      value: -1.35271978
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Points.Array.data[1].y
+      value: -.0769070983
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Points.Array.data[2].x
+      value: -.76660347
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Points.Array.data[2].y
+      value: .773778558
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Points.Array.data[3].x
+      value: .134070396
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Points.Array.data[3].y
+      value: .942307115
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Points.Array.data[4].x
+      value: .97233963
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Points.Array.data[4].y
+      value: .547961354
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Points.Array.data[5].x
+      value: 1.15079021
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Points.Array.data[5].y
+      value: -.259363294
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Points.Array.data[6].x
+      value: 1.09862328
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Points.Array.data[6].y
+      value: -1.06283569
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Points.Array.data[7].x
+      value: -1.26384544
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Points.Array.data[7].y
+      value: -1.00983489
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Points.Array.data[8].x
+      value: .85977459
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Points.Array.data[8].y
+      value: -.994088292
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Points.Array.data[9].x
+      value: -.212009847
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Points.Array.data[9].y
+      value: -1.01438415
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 108308}
