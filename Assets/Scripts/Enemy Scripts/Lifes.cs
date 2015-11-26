@@ -35,6 +35,8 @@ public class Lifes : MonoBehaviour
                 anim.SetBool("Dead", true);
                 GetComponent<PhysicsMover>().enabled = false;
                 DeactivateChildren(this.gameObject ,false);
+
+                GetComponent<BossController>().notDead = false;
             }
 
             if (this.gameObject.tag == "Player")

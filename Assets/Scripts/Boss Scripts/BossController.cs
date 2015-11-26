@@ -6,7 +6,8 @@ public class BossController : MonoBehaviour {
 	public GameObject wave;
 	public Transform spawn;
 	private float nextFire;
-	public float fireRate = 0.5f;
+    public float boosFireRate = 1;
+	float fireRate = 0.5f;
 	private int count = 0;
 	public Animator anim;
     public bool notDead = true;
@@ -21,11 +22,9 @@ public class BossController : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-        
 
-	    
 
-        if (Mathf.Abs(this.gameObject.transform.position.x - player.transform.position.x) < distanceToStart)
+        if ((Mathf.Abs(this.gameObject.transform.position.x - player.transform.position.x) < distanceToStart) && notDead)
         {
             shoot();
         }
@@ -41,7 +40,8 @@ public class BossController : MonoBehaviour {
         if (GameObject.FindWithTag("Player") != null)
             fireRate = this.gameObject.transform.position.x - player.GetComponent<Transform>().position.x;
 
-        if (fireRate > 0.7f) fireRate = 0.7f;
+        if (fireRate > boosFireRate)
+            fireRate = boosFireRate;
 
         if ((Time.time > nextFire) && notDead)
         {
