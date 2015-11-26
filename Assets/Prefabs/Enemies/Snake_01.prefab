@@ -217,7 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 612786ae599d86b4aaa77bd482b4f490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 3.5
 --- !u!114 &11461948
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -282,6 +282,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_SortingOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: speed
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
