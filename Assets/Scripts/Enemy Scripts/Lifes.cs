@@ -31,7 +31,8 @@ public class Lifes : MonoBehaviour
                 GetComponent<PhysicsMover>().enabled = false;
                 DeactivateChildren(this.gameObject ,false);
 
-                GetComponent<BossController>().notDead = false;
+                if(GetComponent<BossController>() != null)
+                    GetComponent<BossController>().notDead = false;
             }
 
             if (this.gameObject.tag == "Player")
