@@ -218,7 +218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 3
-  deathDelay: 1
+  deathDelay: 10
 --- !u!114 &11466426
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -278,10 +278,6 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_SortingOrder
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: deathDelay
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
