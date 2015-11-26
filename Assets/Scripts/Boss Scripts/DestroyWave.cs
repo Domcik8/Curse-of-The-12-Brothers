@@ -4,7 +4,7 @@ using System.Collections;
 public class DestroyWave : MonoBehaviour {
 
     private Collider coll;
-    private int damage=10;
+    public  int damage=10;
     public float destroyTime = 2;
 
     void Start()

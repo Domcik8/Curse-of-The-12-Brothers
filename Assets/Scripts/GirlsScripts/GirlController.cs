@@ -2,9 +2,12 @@
 using System.Collections;
 using System.Diagnostics;
 using Debug = UnityEngine.Debug;
+using UnityEngine.UI; //cia!!!!!!!!
 
 public class GirlController : MonoBehaviour {
-
+    public Image blanc; //cia!!!!!!!!
+    public Text gameover; //cia!!!!!!!!
+    public Text nextlevel; //cia!!!!!!!!
     Time lastShot;
 
     public int speed = 10000;
@@ -58,6 +61,11 @@ public class GirlController : MonoBehaviour {
 		    GetComponent<AudioSource>().Play();
 			featherCount--;
 		}
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.LoadLevel(0);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -74,7 +82,8 @@ public class GirlController : MonoBehaviour {
                 break;
 
             case "End":
-                Application.LoadLevel(0);
+                //Application.LoadLevel(0);
+                StartCoroutine(NextLevel());
                 break;
 
             default:
@@ -94,5 +103,15 @@ public class GirlController : MonoBehaviour {
                 anim.SetBool("Jump", false);
                 break;
         }
+    }
+
+    IEnumerator NextLevel()
+    {
+        blanc.GetComponent<Image>().enabled = true;
+        nextlevel.GetComponent<Text>().enabled = true;
+        yield return new WaitForSeconds(5f);
+        Application.LoadLevel(3);
+
+        yield break;
     }
 }
