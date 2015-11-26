@@ -11,3 +11,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Opening.unity
   - enabled: 1
     path: Assets/Scenes/Location_01_Scene_01.unity
+  - enabled: 1
+    path: Assets/Scenes/Location_02_Scene_01.unity
