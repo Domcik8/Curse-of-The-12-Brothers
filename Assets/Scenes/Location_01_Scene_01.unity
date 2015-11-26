@@ -37,9 +37,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
---- !u!127 &3
-LevelGameManager:
-  m_ObjectHideFlags: 0
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -68,6 +65,7 @@ LightmapSettings:
     m_TextureCompression: 1
     m_FinalGather: 0
     m_FinalGatherRayCount: 1024
+    m_ReflectionCompression: 2
   m_LightmapSnapshot: {fileID: 0}
   m_RuntimeCPUUsage: 25
 --- !u!196 &5
@@ -426,7 +424,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11431774, guid: 980e3b95fc7af16489066a2de40b9df1, type: 2}
       propertyPath: speed
-      value: 5
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 980e3b95fc7af16489066a2de40b9df1, type: 2}
@@ -827,7 +825,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11431774, guid: 980e3b95fc7af16489066a2de40b9df1, type: 2}
       propertyPath: speed
-      value: 5
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 980e3b95fc7af16489066a2de40b9df1, type: 2}
@@ -1105,7 +1103,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11431774, guid: 980e3b95fc7af16489066a2de40b9df1, type: 2}
       propertyPath: speed
-      value: 5
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 980e3b95fc7af16489066a2de40b9df1, type: 2}
@@ -1581,7 +1579,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11431774, guid: 980e3b95fc7af16489066a2de40b9df1, type: 2}
       propertyPath: speed
-      value: 5
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 980e3b95fc7af16489066a2de40b9df1, type: 2}
@@ -2236,7 +2234,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11431774, guid: 980e3b95fc7af16489066a2de40b9df1, type: 2}
       propertyPath: speed
-      value: 5
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 980e3b95fc7af16489066a2de40b9df1, type: 2}
@@ -2951,7 +2949,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 477850, guid: 4a1c32763beb3f44eb288d66c5a5ffba, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 7.71999979
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 477850, guid: 4a1c32763beb3f44eb288d66c5a5ffba, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3302,7 +3300,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11431774, guid: 980e3b95fc7af16489066a2de40b9df1, type: 2}
       propertyPath: speed
-      value: 5
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 980e3b95fc7af16489066a2de40b9df1, type: 2}
@@ -3698,7 +3696,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11431774, guid: 980e3b95fc7af16489066a2de40b9df1, type: 2}
       propertyPath: speed
-      value: 5
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 980e3b95fc7af16489066a2de40b9df1, type: 2}
@@ -4005,7 +4003,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1898203039}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 49.8899994, y: 0, z: 0}
+  m_LocalPosition: {x: 47, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1515204838}

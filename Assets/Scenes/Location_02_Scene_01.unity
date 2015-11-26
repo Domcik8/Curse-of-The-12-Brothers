@@ -37,9 +37,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
---- !u!127 &3
-LevelGameManager:
-  m_ObjectHideFlags: 0
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -68,6 +65,7 @@ LightmapSettings:
     m_TextureCompression: 1
     m_FinalGather: 0
     m_FinalGatherRayCount: 1024
+    m_ReflectionCompression: 2
   m_LightmapSnapshot: {fileID: 0}
   m_RuntimeCPUUsage: 25
 --- !u!196 &5
@@ -3799,6 +3797,47 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 421994, guid: 3fd3bd29ea68a8442894a7472e006856, type: 2}
   m_PrefabInternal: {fileID: 703588049}
+--- !u!1 &1404002613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1404002614}
+  - 61: {fileID: 1404002615}
+  m_Layer: 0
+  m_Name: End
+  m_TagString: End
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1404002614
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1404002613}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7, y: 3.45977497, z: 0}
+  m_LocalScale: {x: 2.69904637, y: 2.83399844, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1922333590}
+  m_RootOrder: 0
+--- !u!61 &1404002615
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1404002613}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 3.81469727e-06, y: 2.64139509}
+  serializedVersion: 2
+  m_Size: {x: .999999881, y: 9.14801311}
 --- !u!4 &1405998334 stripped
 Transform:
   m_PrefabParentObject: {fileID: 431302, guid: 7ace4bdd75658fb4f8f4f3083145bcdd, type: 2}
@@ -4970,7 +5009,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -32.8979988, y: -.790513813, z: 0}
   m_LocalScale: {x: .156228021, y: .156228021, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1404002614}
   m_Father: {fileID: 1240197090}
   m_RootOrder: 12
 --- !u!212 &1922333591
