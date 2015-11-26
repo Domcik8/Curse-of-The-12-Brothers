@@ -1,8 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Lifes : MonoBehaviour
 {
+    public Image blanc; //cia!!!!!!!!
+    public Text gameover; //cia!!!!!!!!
+    public Text nextlevel;
+
     public float life;
     public float deathDelay;
 
@@ -34,6 +39,7 @@ public class Lifes : MonoBehaviour
 
             if (this.gameObject.tag == "Player")
             {
+                StartCoroutine(GameOverText());
                 gameObject.GetComponent<Animator>().SetBool("Dead", true);
                 gameObject.GetComponent<GirlController>().isDead = true;
                 GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>().GirlsDeath();
@@ -60,5 +66,16 @@ public class Lifes : MonoBehaviour
         {
             child.gameObject.SetActive(false);
         }
+    }
+
+    IEnumerator GameOverText()
+    {
+        yield return new WaitForSeconds(2f);
+        blanc.GetComponent<Image>().enabled = true;
+        gameover.GetComponent<Text>().enabled = true;
+        yield return new WaitForSeconds(5f);
+        Application.LoadLevel(0);
+
+        yield break;
     }
 }
