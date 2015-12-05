@@ -50,6 +50,8 @@ public class Lifes : MonoBehaviour
     public void addlife(float live)
     {
         life += live;
+        if (life < 0)
+            life = 0;
     }
 
 

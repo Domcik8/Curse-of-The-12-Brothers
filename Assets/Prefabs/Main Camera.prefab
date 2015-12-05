@@ -1,19 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &133362
+--- !u!1 &162358
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 477850}
-  - 20: {fileID: 2062880}
-  - 92: {fileID: 9268536}
-  - 124: {fileID: 12469274}
-  - 81: {fileID: 8101190}
-  - 114: {fileID: 11431298}
-  - 82: {fileID: 8222306}
+  - 4: {fileID: 487468}
+  - 20: {fileID: 2004908}
+  - 92: {fileID: 9245864}
+  - 124: {fileID: 12417682}
+  - 81: {fileID: 8188474}
+  - 114: {fileID: 11467000}
+  - 82: {fileID: 8216596}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -21,24 +21,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &477850
+--- !u!4 &487468
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 133362}
+  m_GameObject: {fileID: 162358}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: .209999993, y: -.0199999996, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!20 &2062880
+--- !u!20 &2004908
 Camera:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 133362}
+  m_GameObject: {fileID: 162358}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
@@ -53,7 +53,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.125
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -67,19 +67,19 @@ Camera:
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
   m_StereoMirrorMode: 0
---- !u!81 &8101190
+--- !u!81 &8188474
 AudioListener:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 133362}
+  m_GameObject: {fileID: 162358}
   m_Enabled: 1
---- !u!82 &8222306
+--- !u!82 &8216596
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 133362}
+  m_GameObject: {fileID: 162358}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
@@ -144,19 +144,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!92 &9268536
+--- !u!92 &9245864
 Behaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 133362}
+  m_GameObject: {fileID: 162358}
   m_Enabled: 1
---- !u!114 &11431298
+--- !u!114 &11467000
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 133362}
+  m_GameObject: {fileID: 162358}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92d823863b34e4648afb042b39991109, type: 3}
@@ -166,12 +166,12 @@ MonoBehaviour:
   speed: 1
   magnitude: .5
   test: 0
---- !u!124 &12469274
+--- !u!124 &12417682
 Behaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 133362}
+  m_GameObject: {fileID: 162358}
   m_Enabled: 1
 --- !u!1001 &100100000
 Prefab:
@@ -182,5 +182,5 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 133362}
+  m_RootGameObject: {fileID: 162358}
   m_IsPrefabParent: 1

@@ -5,7 +5,10 @@ public class DestroyByBoundary : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(other.gameObject.name + " destroyed by boundary.");
-        Destroy(other.gameObject);
+        if (other.tag != "End")
+        {
+            Debug.Log(other.gameObject.name + " destroyed by boundary.");
+            Destroy(other.gameObject);
+        }
     }
 }

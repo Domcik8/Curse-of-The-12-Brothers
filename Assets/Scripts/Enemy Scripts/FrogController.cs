@@ -25,7 +25,7 @@ public class FrogController : MonoBehaviour {
     {
         if (isGrounded)
         {
-            rigid.AddForce(new Vector2(jumpLenght, jumpHeight));
+            //rigid.AddForce(new Vector2(jumpLenght, jumpHeight));
         }
     }
 
