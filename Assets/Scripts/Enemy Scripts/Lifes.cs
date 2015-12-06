@@ -28,10 +28,17 @@ public class Lifes : MonoBehaviour
                 rb.constraints = RigidbodyConstraints2D.FreezePositionY;
                 coll.enabled = false;
                 anim.SetBool("Dead", true);
-                GetComponent<PhysicsMover>().enabled = false;
+                if(GetComponent<PhysicsMover>() != null)
+                    GetComponent<PhysicsMover>().enabled = false;
                 DeactivateChildren(this.gameObject ,false);
 
+                if (GetComponent<BossController>() !=null)
                 GetComponent<BossController>().notDead = false;
+
+                GameObject bossAtack = GameObject.Find("Boss_attack");
+                if (bossAtack != null)
+                    bossAtack.GetComponent<Transform_overTime>().bossDead = true;
+
             }
 
             if (this.gameObject.tag == "Player")

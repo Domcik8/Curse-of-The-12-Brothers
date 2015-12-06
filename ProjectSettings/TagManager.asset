@@ -16,6 +16,7 @@ TagManager:
   - GM
   - Shadow
   - Boss
+  - BossAtack
   layers:
   - Default
   - TransparentFX

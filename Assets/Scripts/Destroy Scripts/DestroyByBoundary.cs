@@ -7,7 +7,7 @@ public class DestroyByBoundary : MonoBehaviour
     {
         if (other.tag != "End")
         {
-            Debug.Log(other.gameObject.name + " destroyed by boundary.");
+           // Debug.Log(other.gameObject.name + " destroyed by boundary.");
             Destroy(other.gameObject);
         }
     }

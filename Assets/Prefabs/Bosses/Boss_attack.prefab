@@ -14,7 +14,7 @@ GameObject:
   - 114: {fileID: 11412636}
   m_Layer: 0
   m_Name: Boss_attack
-  m_TagString: Untagged
+  m_TagString: BossAtack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62,13 +62,16 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 158674}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d5c87e2f03fe2948846467554191feb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: .000500000024
   movementSpeed: .00499999989
+  deathSpeed: .00999999978
+  deathMovementSpeed: .100000001
+  bossDead: 0
 --- !u!212 &21261284
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -101,7 +104,15 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: BossAtack
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 158674}

@@ -26,7 +26,7 @@ public class Devil_Controller : MonoBehaviour
         {
 
             startBattle();
-
+            if(GameObject.Find("Boss_attack") !=null)
             GameObject.Find("Boss_attack").GetComponent<Transform_overTime>().enabled = true;
 
         }
