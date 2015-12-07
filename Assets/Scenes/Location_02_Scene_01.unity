@@ -3547,7 +3547,7 @@ Prefab:
       objectReference: {fileID: 2061975575}
     - target: {fileID: 11479616, guid: f054042857d02f641b3ef98e0f64fc3b, type: 2}
       propertyPath: life
-      value: 500
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 11485468, guid: f054042857d02f641b3ef98e0f64fc3b, type: 2}
       propertyPath: featherCount
@@ -4365,7 +4365,7 @@ Transform:
   - {fileID: 1861506306}
   - {fileID: 1229401781}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!4 &1591548520 stripped
 Transform:
   m_PrefabParentObject: {fileID: 431302, guid: 7ace4bdd75658fb4f8f4f3083145bcdd, type: 2}
