@@ -20,14 +20,14 @@ public class Transform_overTime : MonoBehaviour {
         {
             this.gameObject.transform.localScale = new Vector2(this.gameObject.transform.localScale.x + speed, this.gameObject.transform.localScale.y);
             this.gameObject.transform.position = new Vector2(this.gameObject.transform.position.x - movementSpeed, this.gameObject.transform.position.y);
-           // Debug.Log("bigger");
+            Debug.Log("bigger");
         }
         else {
             this.gameObject.transform.localScale = new Vector2(this.gameObject.transform.localScale.x - speed, this.gameObject.transform.localScale.y);
             this.gameObject.transform.position = new Vector2(this.gameObject.transform.position.x + movementSpeed, this.gameObject.transform.position.y);
             if (this.gameObject.transform.localScale.x < 0)
                 Destroy(gameObject);
-           // Debug.Log("Smaller");
+            Debug.Log("Smaller");
         }
     }
 }
