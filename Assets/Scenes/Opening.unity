@@ -366,6 +366,32 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 249761431}
+--- !u!1 &716037369 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 162358, guid: 4a1c32763beb3f44eb288d66c5a5ffba, type: 2}
+  m_PrefabInternal: {fileID: 1816449048}
+--- !u!114 &716037377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 716037369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bde0d768cb384234da9823eace9a9717, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  i1: {fileID: 28523696}
+  i2: {fileID: 903700309}
+  i3: {fileID: 849563087}
+  i4: {fileID: 785595524}
+  i5: {fileID: 913169644}
+  i6: {fileID: 110318939}
+  i7: {fileID: 1511963182}
+  i8: {fileID: 755214769}
+  i9: {fileID: 1839608478}
+  i10: {fileID: 1858970592}
+  i11: {fileID: 2105095130}
 --- !u!1 &755214767
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,32 +829,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 913169642}
---- !u!1 &1272107955 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 133362, guid: 4a1c32763beb3f44eb288d66c5a5ffba, type: 2}
-  m_PrefabInternal: {fileID: 1816449048}
---- !u!114 &1272107956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1272107955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bde0d768cb384234da9823eace9a9717, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  i1: {fileID: 28523696}
-  i2: {fileID: 903700309}
-  i3: {fileID: 849563087}
-  i4: {fileID: 785595524}
-  i5: {fileID: 913169644}
-  i6: {fileID: 110318939}
-  i7: {fileID: 1511963182}
-  i8: {fileID: 755214769}
-  i9: {fileID: 1839608478}
-  i10: {fileID: 1858970592}
-  i11: {fileID: 2105095130}
 --- !u!1 &1511963180
 GameObject:
   m_ObjectHideFlags: 0
@@ -1107,7 +1107,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Once upon a time there was a king, a queen, daughter and tvelve brothers...
+  m_Text: Once upon a time there was a king, a queen, a daughter and tvelve brothers...
 --- !u!222 &1683995278
 CanvasRenderer:
   m_ObjectHideFlags: 0
